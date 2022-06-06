@@ -7,7 +7,34 @@
     <title>Porcentajes y Descuentos</title>
 </head>
 <body>
+    <header> 
+    <img src="./">
     <h1>Porcentajes y Descuentos</h1>
+    </header>
+   <section class="discont-card">
+   <h1>Calculadora de descuentos con cupones</h1>
+   <label for="priceValue">
+   Precio
+   </label>
+   <input id="priceValue" type="number"> 
+
+   <label for="discont">
+    Descuento 
+   </label>
+   <input id="discont" type="number">
+
+   <button type="button" onclick="calPriceWithDiscont()">Calcular descuento por Monto</button>
+
+   <label for="coupon">
+    Coupon 
+   </label>
+   <input id="coupon" type="text"> 
+
+   <button type="button" onclick="validDiscont()">Calcular descuento de Coupon</button>
+   <p id="priceF"></p>
+ 
+
+   </section>
     <script src="./porcentaje.js"></script>
 </body>
 </html>
